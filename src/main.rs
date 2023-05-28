@@ -3,8 +3,8 @@ use std::net::{TcpStream};
 use std::process::{Command, Stdio};
 
 fn main() -> io::Result<()> {
-    let ip = "10.1.20.67"; // target host IP address
-    let port = "4464"; // target host port
+    let ip = "172.16.20.99 "; // target host IP address
+    let port = "4441"; // target host port
     let mut stream = TcpStream::connect(format!("{}:{}", ip, port))?;
 
     println!("Connected to {}:{}", ip, port);
